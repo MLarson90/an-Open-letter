@@ -8,4 +8,13 @@ $(document).ready(function(){
 
     event.preventDefault();
   });
+  $('.formTwo').submit(function(event){
+    var respondInput = ('input#respond').val();
+
+    $('.respond').text(respondInput);
+
+    $('#responseLetter').show();
+
+    event.preventDefault();
+  });
 });
